@@ -6,7 +6,7 @@ import pygame
 from assets import Pause, Developer, Cube
 
 # - This loop is used for testing the responsiveness of the game window
-def test_environment(game):
+def title_screen(game):
     "This game loop stores tests for me to trial frame rate and other features"
     # - Create a variable for time keeping
     game.get_prev_time()

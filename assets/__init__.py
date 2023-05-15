@@ -8,8 +8,6 @@ from .modules import Window
 
 # - Asset scripts
 from .scripts import Cube
-from .scripts import Player
-from .scripts import Gui
 
 # - Game loops
-from .loops import test_environment
+from .loops import title_screen
