@@ -11,3 +11,4 @@ from .scripts import Cube
 
 # - Game loops
 from .loops import title_screen
+from .loops import two_player_game

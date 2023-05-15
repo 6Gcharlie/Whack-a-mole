@@ -3,7 +3,7 @@ main.py is the executable for the game, run this to play the game!
 """
 # - Module imports for the game
 import pygame
-from assets import Window, title_screen
+from assets import Window, title_screen, two_player_game
 
 # - Initialise modules
 pygame.font.init()
@@ -25,7 +25,7 @@ window_attributes = {
     "flags": OPENGL_FLAGS if RENDER == "OpenGL" else SDL_FLAGS,
     "clock": pygame.time.Clock(),
     "vsync": False,
-    "loop": "window test",
+    "loop": "two player game",
     "tick": "NA",
     "path": "assets/original/",
     "fps": 60
@@ -39,8 +39,10 @@ game.set_game_surface("Window test")
 if __name__ == "__main__":
     while game.running:
         match game.loop:
-            case "window test":
+            case "title screen":
                 title_screen(game)
+            case "two player game":
+                two_player_game(game)
             case "restart":
                 game.set_loop("window test")
 
