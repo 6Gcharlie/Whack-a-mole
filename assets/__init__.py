@@ -8,6 +8,7 @@ from .modules import Window
 
 # - Asset scripts
 from .scripts import Cube
+from .scripts import Hammer
 
 # - Game loops
 from .loops import title_screen

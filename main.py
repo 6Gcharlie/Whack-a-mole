@@ -33,7 +33,7 @@ window_attributes = {
 
 # - Create game object
 game = Window(window_attributes, False, False)
-game.set_game_surface("Window test")
+game.set_game_surface("Whack-a-mole")
 
 # - Main window loop
 if __name__ == "__main__":
